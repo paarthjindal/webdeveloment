@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 2px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Custom cell borders for specific cells */
+        th:nth-child(2),
+        td:nth-child(2),
+        th:nth-child(3),
+        td:nth-child(3) {
+            border-right: 4px solid #3498db;
+        }
+
+        th:nth-child(4),
+        td:nth-child(4) {
+            border-left: 4px solid #e74c3c;
+        }
+
+        /* Merged cells in the header */
+        th.colspan2 {
+            text-align: center;
+            background-color: #3498db;
+            color: #fff;
+        }
+    </style>
+    <title>Custom Table with Merged Cells</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">ID</th>
+                <th colspan="2" class="colspan2">Name</th>
+                <th rowspan="2">Age</th>
+                <th rowspan="2">Country</th>
+            </tr>
+            <tr>
+                <th>First</th>
+                <th>Last</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>Doe</td>
+                <td>25</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane</td>
+                <td>Smith</td>
+                <td>30</td>
+                <td>Canada</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

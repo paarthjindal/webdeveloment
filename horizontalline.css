@@ -1,0 +1,31 @@
+.horizontal {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.paragraphcolour {
+    color: white;
+    background-color:green ;
+}
+.r{
+    color:red;
+}
+.y{
+    color:rgb(238, 255, 0);
+}
+.o{
+    color:rgb(255, 145, 0);
+}
+
+.purple
+{
+    color:blueviolet;
+}
+.display{
+    display: flex;
+    
+}
+.final{
+    
+    font-style:bold;
+}
